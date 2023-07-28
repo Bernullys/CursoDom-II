@@ -17,7 +17,9 @@ async function gettingFoxys () {
 async function settingFoxy () {
 
     const articleContainer = document.createElement("article");
+    articleContainer.className = "main-container-article";
     const foxyImage = document.createElement("img");
+    foxyImage.className = "fox-image";
     //foxyImage.src = await gettingFoxys();
     foxyImage.dataset.src = await gettingFoxys();
     articleContainer.appendChild(foxyImage);
@@ -27,6 +29,7 @@ async function settingFoxy () {
 
 
 const foxysMainContainer = document.querySelector(".main-container");
+foxysMainContainer.className = "main-container";
 async function postFoxy () {
     const newFoxy = await settingFoxy();
     foxysMainContainer.appendChild(newFoxy);

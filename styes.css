@@ -1,0 +1,87 @@
+:root {
+    --color1: #9DC9AC;
+    --color2: #FFFEC7;
+    --color3: #F56218;
+    --color4: #FF9D2E;
+    --color5: #919167;
+
+    --sm: 8px;
+    --md: 16px;
+    --lg: 32px;
+}
+
+body {
+    background-color: var(--color1);
+    margin: 24px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.title-container {
+    background-color: #F56218;
+    padding: 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    border-radius: 12px;
+}
+.title {
+    text-align: center;
+    font-size: xx-large;
+    color: var(--color2);
+}
+.buttons-container {
+    display: flex;
+}
+
+#get-fox-button,
+#delete-all-fox-button {
+    width: 50%;
+    height: 64px;
+    border-radius: 12px;
+    cursor: pointer;
+    border-color: var(--color3);
+    color: var(--color3);
+    font-size: x-large;
+    font-weight: bold;
+    background-color: var(--color2);
+}
+
+.fox-image {
+    /* height: 600px; */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+.main-container {
+    margin-top: 36px;
+    height: 100%;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container-article {
+    margin-right: 32px;
+    margin-bottom: 36px;
+    justify-content: center;
+}
+
+  
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite; /* Apply the spin animation */
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
